@@ -8,7 +8,7 @@ from ViewBooks import *
 from IssueBook import *
 from ReturnBook import *
 # Add your own database name and password here to reflect in the code
-mypass = "root"
+mypass = "sac6567"
 mydatabase="db"
 
 con = pymysql.connect(host="localhost",user="root",password=mypass,database=mydatabase)
@@ -45,7 +45,7 @@ Canvas1.pack(expand=True,fill=BOTH)
 headingFrame1 = Frame(root,bg="#FFBB00",bd=5)
 headingFrame1.place(relx=0.2,rely=0.1,relwidth=0.6,relheight=0.16)
 
-headingLabel = Label(headingFrame1, text="Welcome to \n DataFlair Library", bg='black', fg='white', font=('Courier',15))
+headingLabel = Label(headingFrame1, text="Welcome to Library", bg='black', fg='white', font=('Courier',15))
 headingLabel.place(relx=0,rely=0, relwidth=1, relheight=1)
 
 btn1 = Button(root,text="Add Book Details",bg='black', fg='white', command=addBook)
